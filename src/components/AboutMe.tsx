@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import Skills from "./Skills";
 
-export default function AboutMe() {
+const AboutMe = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <footer className="h-[950px] mt-40 pt-12 relative bg-purple-600 rounded-tl-[100px] text-white font-poppins lg:h-[870px]">
+    <footer ref={ref} className="h-[950px] mt-40 pt-12 relative bg-purple-600 rounded-tl-[100px] text-white font-poppins lg:h-[870px]">
       <div className="grid justify-items-center lg:grid-cols-[1fr_2fr]">
         <h1 className="text-2xl font-semibold mb-8 md:text-2xl lg:text-3xl">
           About me
@@ -78,4 +79,6 @@ export default function AboutMe() {
       </div>
     </footer>
   );
-}
+})
+
+export default AboutMe;

@@ -12,5 +12,4 @@ export default function Skills({ logoSrc, logoAlt, skillName }: Props) {
           <div>{skillName}</div>
         </li>
       )
-
 }

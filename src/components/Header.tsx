@@ -1,7 +1,17 @@
 import { useState } from "react";
+type Props = {
+  onScrollToProjects: () => void;
+  onScrollToAboutMe: () => void;
+}
 
-export default function Header() {
+export default function Header({ onScrollToProjects, onScrollToAboutMe}: Props) {
   const [navbar, setNavbar] = useState(false);
+
+  // function scrollTo(id: string) {
+  //   const titleElement document.getElementById('title')
+  //   titleElement.scrollIntoView({ behavior: 'smooth' })
+  
+  // }
 
   return (
     <header className="w-full bg-white">
@@ -53,13 +63,13 @@ export default function Header() {
             }`}>
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="#">Projects</a>
+                <button onClick={onScrollToProjects} >Projects</button>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="#">About me</a>
+                <button onClick={onScrollToAboutMe} >About Me</button>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="#">Contact</a>
+                <a href="mailto:eddbausa@gmail.com">Contact</a>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <a href="#">Resume</a>

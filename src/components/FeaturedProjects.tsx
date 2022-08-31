@@ -1,8 +1,13 @@
+import { forwardRef } from "react";
 import ProjectContainer from "./ProjectContainer";
 
-export default function FeaturedProjects() {
+
+
+
+const FeaturedProjects = forwardRef<HTMLElement>((_, ref) => {
+
   return (
-    <section className="my-12">
+    <section ref={ref} id="projects" className="my-12">
       <div className="flex flex-col justify-between items-center mb-6 lg:flex-row">
         <h1 className="text-[hsl(247,37%,19%)] text-2xl font-bold lg:mb-6 2xl:text-3xl">
           Featured Projects
@@ -40,4 +45,6 @@ export default function FeaturedProjects() {
       </div>
     </section>
   );
-}
+})
+
+export default FeaturedProjects;
