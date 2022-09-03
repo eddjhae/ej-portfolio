@@ -1,9 +1,6 @@
 import { forwardRef } from "react";
 import ProjectContainer from "./ProjectContainer";
 
-
-
-
 const FeaturedProjects = forwardRef<HTMLElement>((_, ref) => {
 
   return (

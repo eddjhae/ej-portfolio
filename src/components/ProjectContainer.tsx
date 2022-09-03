@@ -12,7 +12,7 @@ export default function ProjectContainer({
   projectDetails
 }: Props) {
   return (
-    <a href={vidLink} className="relative">
+    <a href={vidLink} target="_blank" className="relative">
       <video className="w-full rounded-xl" autoPlay loop muted>
         <source src={vidSrc} />
       </video>
