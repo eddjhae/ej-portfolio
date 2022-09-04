@@ -9,7 +9,7 @@ const FeaturedProjects = forwardRef<HTMLElement>((_, ref) => {
         <h1 className="text-[hsl(247,37%,19%)] text-2xl font-bold lg:mb-6 2xl:text-3xl">
           Featured Projects
         </h1>
-        <p className="text-lg font-light text-center 2xl:text-xl">
+        <p className="text-lg font-light text-center 2xl:text-xl">' '
           my work is the bridge to various insightful digital experiences.
         </p>
       </div>

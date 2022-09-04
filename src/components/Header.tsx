@@ -7,12 +7,6 @@ type Props = {
 export default function Header({ onScrollToProjects, onScrollToAboutMe}: Props) {
   const [navbar, setNavbar] = useState(false);
 
-  // function scrollTo(id: string) {
-  //   const titleElement document.getElementById('title')
-  //   titleElement.scrollIntoView({ behavior: 'smooth' })
-  
-  // }
-
   return (
     <header className="w-full bg-white">
       <nav className="justify-between w-full md:items-center md:flex">
@@ -72,7 +66,7 @@ export default function Header({ onScrollToProjects, onScrollToAboutMe}: Props) 
                 <a href="mailto:eddbausa@gmail.com">Contact</a>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <a href="#">Resume</a>
+                <a href="assets/EddJhaeBausa-Resume.pdf" download>Resume</a>
               </li>
             </ul>
           </div>
